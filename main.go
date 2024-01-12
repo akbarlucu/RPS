@@ -11,7 +11,7 @@ import (
 func main() {
 
 	//Rock-Paper-Scissor Game
-	var choices = []string{"rock, paper, scissor"} //Variable choices berisi Rock, Paper, Scissor
+	var choices = []string{"rock", "paper", "scissor"} //Variable choices berisi Rock, Paper, Scissor
 
 	rand.Seed(time.Now().UnixNano()) //Untuk menginisialisasi angka acak secara real time
 
