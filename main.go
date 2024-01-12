@@ -54,6 +54,8 @@ func main() {
 			fmt.Println("Computer win!")
 			computerScore++
 		}
+
+		fmt.Println("Skor anda adalah: ", userScore, "Skor BOT adalah: ", computerScore)
 	}
 	// a := 12                    //deklarasi int
 	// b := 18                    //deklarasi int
