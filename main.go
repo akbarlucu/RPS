@@ -11,7 +11,7 @@ import (
 func main() {
 
 	//Rock-Paper-Scissor Game
-	var choices = []string{"Rock, Paper, Scissor"} //Variable choices berisi Rock, Paper, Scissor
+	var choices = []string{"rock, paper, scissor"} //Variable choices berisi Rock, Paper, Scissor
 
 	rand.Seed(time.Now().UnixNano()) //Untuk menginisialisasi angka acak secara real time
 
@@ -42,6 +42,18 @@ func main() {
 		}
 
 		computerChoice := choices[rand.Intn(len(choices))] // The range start from 0 and finish on 2. It will not take 3.
+
+		//The winner
+
+		if userChoice == computerChoice {
+			fmt.Println("Seri!")
+		} else if userChoice == "rock" && computerChoice == "scissors" || userChoice == "paper" && computerChoice == "rock" || userChoice == "scissor" && computerChoice == "paper" {
+			fmt.Println("User win!")
+			userScore++
+		} else {
+			fmt.Println("Computer win!")
+			computerScore++
+		}
 	}
 	// a := 12                    //deklarasi int
 	// b := 18                    //deklarasi int
